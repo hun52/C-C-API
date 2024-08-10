@@ -5,7 +5,7 @@
     #ifdef _WINDLL
         #define API __declspec(dllexport)
     #else
-    #define API __declspec(dllimport)
+        #define API __declspec(dllimport)
     #endif
 #else
     #if __GNUC__ >= 4
@@ -63,7 +63,7 @@ API api_error_t mod(int32_t* const result, int32_t const a, int32_t const b);
 /// @param a First integer
 /// @param b Second integer
 /// @return The power of the two integers
-API api_error_t pow(int32_t* const result, int32_t const a, int32_t const b);
+// API api_error_t pow(int32_t* const result, int32_t const a, int32_t const b);
 
 #if defined(__cplusplus)
 } // namespace math_api
