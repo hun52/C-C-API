@@ -30,4 +30,4 @@ add_subdirectory(application_for_cpp)
 # ------------------------------------------------
 # Add an application for c
 # ------------------------------------------------
-add_subdirectory(application_for_c)
+# add_subdirectory(application_for_c)

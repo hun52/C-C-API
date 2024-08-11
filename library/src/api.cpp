@@ -2,8 +2,7 @@
 #include <iostream>
 #include <cmath>
 
-using namespace math_api;
-
+namespace math_api {
 api_error_t add(int32_t* const result, int32_t const a, int32_t const b) {
     api_error_t err { API_SUCCESS };
     if(result == nullptr) {
@@ -92,6 +91,8 @@ api_error_t mod(int32_t* const result, int32_t const a, int32_t const b) {
     }
     return err;
 }
+
+} // namespace math_api
 
 // api_error_t pow(int32_t* const result, int32_t const a, int32_t const b) {
 //     api_error_t err { API_SUCCESS };
